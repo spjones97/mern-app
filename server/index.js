@@ -28,5 +28,5 @@ mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnified
     .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
     .catch((error) => console.log(error.message));
 
-// Makes sure we don't get any errors in the console.
+// Makes sure we don't get any warnings in the console.
 mongoose.set('useFindAndModify', false)
