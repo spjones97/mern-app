@@ -14,7 +14,6 @@ const Home = () => {
         dispatch(getPosts());
     }, [currentId, dispatch]);
 
-
     return (
         <Grow in>
             <Container>
