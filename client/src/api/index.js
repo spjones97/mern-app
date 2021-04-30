@@ -1,6 +1,6 @@
 import axios from 'axios'; // used to make api calls
 
-const API = axios.create({ baseURL: 'https://memory-mern-app.netlify.app' });
+const API = axios.create({ baseURL: 'https://mem-mern-app.herokuapp.com' });
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem('profile')) {
