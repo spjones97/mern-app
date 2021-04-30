@@ -1,6 +1,6 @@
 import axios from 'axios'; // used to make api calls
 
-const API = axios.create({ baseURL: 'http://localhost:5000' });
+const API = axios.create({ baseURL: 'https://memory-mern-app.netlify.app' });
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem('profile')) {

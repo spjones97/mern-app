@@ -1,7 +1,4 @@
 import jwt from 'jsonwebtoken';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 /*
     Wants to like a post:
@@ -16,7 +13,7 @@ const auth = async (req, res, next) => {
         let decodedData;
 
         if (token && isCustomerAuth) {
-            decodedData = jwt.verify(token, process.env.test);
+            decodedData = jwt.verify(token, 'test');
 
             req.userId = decodedData?.id;
         } else {
